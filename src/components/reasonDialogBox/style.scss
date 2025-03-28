@@ -1,0 +1,55 @@
+@import "../../styles/global";
+
+
+.reason-btn{
+  border: none;
+  color: #ffffff;
+  background-color: $brown;
+  font-family: $Poppins-Medium;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  position: relative;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.MuiDialogTitle-root{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 5vh;
+}
+
+.MuiDialogContent-root {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  min-width: 10rem;
+  select{
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    background-color: #EDEDED;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    font-family: $Poppins-Regular;
+    cursor: pointer;
+  }
+  textarea{
+    background-color:#EDEDED ;
+    padding: 0.5rem;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    font-family: $Poppins-Regular;
+    resize: none;
+
+
+  }
+}
+
+.error-text{
+  color: red;
+  margin: 0;
+  text-align: center;
+}

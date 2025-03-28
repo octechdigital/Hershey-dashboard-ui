@@ -1,0 +1,31 @@
+@import "../../styles/global";
+
+
+.MuiDialogTitle-root {
+  font-family: $Poppins-Bold;
+
+  h2 {
+    font-family: $Poppins-Bold;
+  }
+}
+
+
+.MuiDialogActions-root {
+  height: 6vh;
+}
+
+.MuiIconButton-colorSuccess {
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid green;
+  }
+}
+
+.MuiIconButton-colorError {
+  border: 1px solid transparent;
+
+  &:hover {
+    border: 1px solid red;
+  }
+}

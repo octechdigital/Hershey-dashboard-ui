@@ -1,0 +1,40 @@
+{
+    "change_language": {
+        "en": "I am here to experience 'Dum Hai Toh Dikha'. By pressing 'send' on this message, I consent to sharing my Mobile number and Display name with Thums Up®.",
+        "bn": "আমি 'দম আছে তো দেখাও' অভিজ্ঞতা নিতে এসেছি। এই বার্তায় 'send' চাপ দিয়ে, আমি আমার মোবাইল নম্বর এবং ডিসপ্লে নাম Thums Up®-এর সাথে শেয়ার করতে সম্মতি দিচ্ছি।",
+        "pa": "ਮੈਂ 'ਦਮ ਹੈ ਤਾਂ ਦਿਖਾ' ਦਾ ਅਨੁਭਵ ਕਰਨ ਆਇਆ ਹਾਂ। ਇਸ ਸੁਨੇਹੇ 'send' ਨੂੰ ਦਬਾ ਕੇ, ਮੈਂ ਆਪਣਾ ਮੋਬਾਈਲ ਨੰਬਰ ਅਤੇ ਡਿਸਪਲੇ ਨਾਂ Thums Up® ਨਾਲ ਸਾਂਝਾ ਕਰਨ ਲਈ ਸਹਿਮਤ ਹਾਂ।",
+        "hi": "मैं 'दम है तो दिखा' का अनुभव करने यहां आया हूं। इस संदेश में 'send' दबाकर, मैं अपना मोबाइल नंबर और डिस्प्ले नाम Thums Up® के साथ साझा करने की सहमति देता हूं।"
+    },
+    "buttons": {
+        "how_to_participate": {
+            "en": "How to Participate",
+            "bn": "কিভাবে অংশগ্রহণ করবেন",
+            "pa": "ਕਿਵੇਂ ਹਿੱਸਾ ਲੈਣਾ ਹੈ",
+            "hi": "कैसे भाग लें"
+        },
+        "i_am_interested": {
+            "en": "I am Interested",
+            "bn": "আমি আগ্রহী",
+            "pa": "ਮੈਂ ਰੁਚੀ ਰੱਖਦਾ ਹਾਂ",
+            "hi": "मैं इच्छुक हूं"
+        },
+        "stop": {
+            "en": "Stop",
+            "bn": "থামুন",
+            "pa": "ਰੋਕੋ",
+            "hi": "रुकें"
+        },
+        "enter_unique_code": {
+            "en": "Enter Unique Code",
+            "bn": "অনন্য কোড প্রবেশ করান",
+            "pa": "ਵਿਅਕਤੀਗਤ ਕੋਡ ਦਾਖਲ ਕਰੋ",
+            "hi": "अद्वितीय कोड दर्ज करें"
+        },
+        "change_language": {
+            "en": "Change Language",
+            "bn": "ভাষা পরিবর্তন করুন",
+            "pa": "ਭਾਸ਼ਾ ਬਦਲੋ",
+            "hi": "भाषा बदलें"
+        }
+    }
+}

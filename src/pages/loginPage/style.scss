@@ -1,0 +1,39 @@
+@import "../../styles/global";
+
+.topLogo {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  width: 10%;
+
+  .logo-container {
+    width: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+}
+
+
+.loginPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(52.44% 24.22% at 51.28% 19.05%, #2F1C1C 0%, #3F000B 100%);
+  // background: url("../../assets/eastman-bg.png") no-repeat center;
+  // background-size: cover;
+
+  .hershay_bottle {
+    margin-bottom: .5rem;
+    width: 50%;
+
+    img {
+      width: 50%;
+    }
+  }
+
+}

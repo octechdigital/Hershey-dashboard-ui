@@ -1,0 +1,72 @@
+export const ROUTES = {
+  LOGIN: "/",
+  DASHBOARD: "/dashboard",
+  APPROVED: "/dashboard/approved",
+  REJECTED: "/dashboard/rejected",
+  PENDING: "/dashboard/pending",
+  WINNER: "/dashboard/winner",
+  PRIVATE_ROUTE: "/private",
+};
+
+export enum LANGUAGE {
+  ENGLISH = "en",
+  // HINDI = "hi",
+  // MARATHI = "mr",
+  // TAMIL = "ta",
+  // TELUGU = "te",
+  // BENGALI = "bn",
+  // KANNADA = "kn",
+  // MALAYALAM = "ml",
+}
+
+// List used for drop down
+export const LANGUAGES: Record<LANGUAGE, string> = {
+  [LANGUAGE.ENGLISH]: "EN",
+  // [LANGUAGE.HINDI]: "हिन्दी",
+  // [LANGUAGE.MARATHI]: "मराठी",
+  // [LANGUAGE.KANNADA]: "ಕನ್ನಡ",
+  // [LANGUAGE.TELUGU]: "తెలుగు",
+  // [LANGUAGE.TELUGU]: "TE",
+  // [LANGUAGE.TAMIL]: "தமிழ்",
+  // [LANGUAGE.BENGALI]: "বাংলা",
+};
+
+export const STATES = [
+  "Andaman and Nicobar Islands",
+  "Andhra Pradesh",
+  "Arunachal Pradesh",
+  "Assam",
+  "Bihar",
+  "Chandigarh",
+  "Chhattisgarh",
+  "Dadra and Nagar Haveli",
+  "Daman and Diu",
+  "Delhi",
+  "Goa",
+  "Gujarat",
+  "Haryana",
+  "Himachal Pradesh",
+  "Jammu and Kashmir",
+  "Jharkhand",
+  "Karnataka",
+  "Kerala",
+  "Lakshadweep",
+  "Madhya Pradesh",
+  "Maharashtra",
+  "Manipur",
+  "Meghalaya",
+  "Mizoram",
+  "Nagaland",
+  "Odisha",
+  "Puducherry",
+  "Punjab",
+  "Rajasthan",
+  "Sikkim",
+  "Tamil Nadu",
+  "Telangana",
+  "Tripura",
+  "Uttar Pradesh",
+  "Uttarakhand",
+  "West Bengal",
+];
+

@@ -1,0 +1,29 @@
+@import "../../styles/global";
+
+.errorPage{
+  display: flex;
+  flex-direction: column;
+  row-gap: 5vh;
+  h1{
+    font-family: $Poppins-Bold;
+    color: $red;
+  }
+  a{
+    width: 100%;
+    button{
+      outline: none;
+      border: none;
+      background-color: #000fff;
+      padding: .5rem 2rem;
+      font-size: 2rem;
+      font-family: $Poppins-Bold;
+      cursor: pointer;
+      color: #FFFFFF;
+      border-radius: 25px;
+
+    }
+    &:link {
+      text-decoration: none;
+    }
+  }
+}

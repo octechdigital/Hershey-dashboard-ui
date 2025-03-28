@@ -1,0 +1,147 @@
+@import "../../../styles/global";
+
+@mixin error {
+  color: $red;
+  font-size: 1.2vw;
+  align-self: start;
+  position: relative;
+  left: 4vw;
+}
+
+.login-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+  background-color: #fff;
+  color: #000;
+  row-gap: 15px;
+  padding: 5%;
+  height: max-content;
+  font-family: $Poppins-Regular;
+  box-shadow: -28px 35px 44px 0px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(21.5px);
+  border: 3px solid #fff;
+  max-width: 25rem;
+  h1 {
+    font-family: $Poppins-Bold;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+  .toast-message {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px; /* Optional: Set a maximum width for larger screens */
+  }
+
+  .formValidation {
+    display: contents;
+
+    .login-reg {
+      display: flex;
+      flex-direction: column;
+      padding: 0 5rem;
+      outline: none;
+      border-radius: 25px;
+      row-gap: 15px;
+      width: 100%;
+      align-items: center;
+
+      .error {
+        @include error;
+        align-self: center;
+        position: initial;
+      }
+
+      .login-email {
+        width: 100%;
+        display: flex;
+        outline: auto #000000;
+        border-radius: 12px;
+        flex-direction: column;
+
+        .emailInput {
+          display: flex;
+
+          .userLogo {
+            margin-left: 6%;
+          }
+
+          .login-email-field {
+            text-align: start;
+            font-size: 0.5em;
+            width: 100%;
+            min-height: 7vh;
+            outline: none;
+          }
+
+          input:-webkit-autofill,
+          input:-webkit-autofill:focus {
+            box-shadow: 0 0 0 1000px white inset;
+          }
+        }
+      }
+
+      .login-input-divider {
+        display: none;
+      }
+
+      .login-password {
+        width: 100%;
+        display: flex;
+        outline: auto #000000;
+        border-radius: 12px;
+        flex-direction: column;
+
+        .passwordInput {
+          display: flex;
+
+          .passwordLogo {
+            margin-left: 6%;
+          }
+
+          .login-password-field {
+            width: 100%;
+            text-align: start;
+            font-size: 18px;
+            min-height: 7vh;
+            outline: none;
+          }
+
+          .eyeLogo {
+            margin-right: 2%;
+          }
+        }
+      }
+    }
+  }
+
+  .login-button {
+    outline-style: none;
+    border-style: none;
+    color: #fff;
+    background-color: #e22028;
+    border-radius: 10px;
+    min-height: 7vh;
+    font-size: 17px;
+    font-weight: 600;
+    width: 80%;
+    column-gap: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -34px 37px 40px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+
+    a {
+      color: #fff;
+
+      &:link {
+        text-decoration: none;
+      }
+    }
+  }
+}

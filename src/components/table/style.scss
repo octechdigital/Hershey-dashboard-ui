@@ -1,0 +1,31 @@
+@import "../../styles/global";
+
+.MuiTableRow-root {
+  border-bottom: none;
+}
+.MuiTablePagination-menuItem {
+  background-color: #30d841;
+}
+.MuiTableCell-root {
+  border-bottom: none;
+}
+.approval-btn {
+  display: flex;
+  font-family: $Poppins-Regular;
+  align-items: center;
+  color: $green;
+}
+.rejected-btn {
+  display: none !important;
+  color: #ffffff;
+  background-color: $sky-blue;
+  border: none;
+  padding: 0.5em 1em;
+  border-radius: 25px;
+  cursor: pointer;
+  display: flex;
+  font-family: $Poppins-Regular;
+  align-items: center;
+}
+
+
