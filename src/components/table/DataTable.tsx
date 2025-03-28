@@ -330,6 +330,18 @@ const DataTable: React.FC<DataTableProps> = ({
               >
                 Mobile number
               </TableCell>
+              <TableCell
+                align={"center"}
+                sx={{ color: "#5F5F5F", fontSize: "18px", fontWeight: "600" }}
+              >
+                State
+              </TableCell>
+              {/* <TableCell
+                align={"center"}
+                sx={{ color: "#5F5F5F", fontSize: "18px", fontWeight: "600" }}
+              >
+                Mobile number
+              </TableCell> */}
               {/* <TableCell
                 align={"center"}
                 sx={{ color: "#5F5F5F", fontSize: "18px", fontWeight: "600" }}
@@ -474,6 +486,12 @@ const DataTable: React.FC<DataTableProps> = ({
                 <TableCell align={"center"} sx={{ borderBottom: "none" }}>
                   {row.mobile}
                 </TableCell>
+                <TableCell align={"center"} sx={{ borderBottom: "none" }}>
+                  {row.state}
+                </TableCell>
+                {/* <TableCell align={"center"} sx={{ borderBottom: "none" }}>
+                  {row.city}
+                </TableCell> */}
                 {/* <TableCell align={"center"} sx={{ borderBottom: "none" }}>
                   {row.invoiceNumbers}
                 </TableCell> */}
