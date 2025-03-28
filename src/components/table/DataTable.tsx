@@ -33,6 +33,7 @@ import { BaseUrlApi } from "../../lib/axios-instances";
 import { useNavigate } from "react-router-dom";
 import VideoPopup from "../openVideoDialogBox/OpenVideoDialogBox";
 import ResendDialogBox from "../holdDialogBox/HoldDialogBox";
+import { date } from "yup";
 
 interface DataTableProps {
   data: Array<{
@@ -309,7 +310,9 @@ const DataTable: React.FC<DataTableProps> = ({
   // console.log('endIndex: ', endIndex);
   // // Get the rows to display on the current page
   const pageData = data.slice(startIndex, endIndex);
-  // // console.log('pageData', pageData);
+  console.log('pageData', pageData);
+  const onlyDate = data.slice(0, 10);
+  console.log("onlyDate: ", onlyDate);
 
   // @ts-ignore
   return (
@@ -534,7 +537,7 @@ const DataTable: React.FC<DataTableProps> = ({
                   {row.noOfProducts}
               </TableCell>*/}
                 <TableCell align={"center"} sx={{ borderBottom: "none" }}>
-                  {row.date}
+                  {row.date.slice(0, 10)}
                 </TableCell>
                 <TableCell align={"center"}>
                   {row.url?.includes(".mp4") ? (
