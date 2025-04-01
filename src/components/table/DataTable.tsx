@@ -188,26 +188,42 @@ const DataTable: React.FC<DataTableProps> = ({
         },
       }
     )
-      .then(async (response) => {
-        const data = response.data;
-        if (data.statusCode === 200) {
-          setSuccessMessage("Invoice approved successfully");
-          setSnackbarOpen(true);
-          newPendingData(!newdata);
-        } else {
-          console.log("Approve failed");
-        }
-        setIsLoading(false);
-      })
-      .catch((error) => {
-        // console.log("An error occurred: ", error)
-        setIsLoading(false);
-        if (error.response.status) {
-          localStorage.removeItem("token");
-          navigate("/");
-        }
-      });
-  }
+    .then(async (response) => {
+      const data = response.data;
+
+      console.log("Raw API Response:", data);
+
+      let decodedData;
+      try {
+        const base64String = data.resp;
+        const jsonString = atob(base64String);
+        decodedData = JSON.parse(jsonString);
+      } catch (error) {
+        console.error("Base64 decoding failed, using raw response:", error);
+        decodedData = data;
+      }
+
+      console.log("Decoded Response:", decodedData);
+
+      if (decodedData.statusCode === 200) {
+        setSuccessMessage("Invoice approved successfully");
+        setSnackbarOpen(true);
+        newPendingData(!newdata);
+      } else {
+        console.log("Approve failed");
+      }
+
+      setIsLoading(false);
+    })
+    .catch((error) => {
+      setIsLoading(false);
+      console.error("Approval API error:", error);
+      if (error.response?.status) {
+        localStorage.removeItem("token");
+        navigate("/");
+      }
+    });
+}
 
   async function review(userId: number | null) {
     setIsLoading(true);
@@ -310,7 +326,7 @@ const DataTable: React.FC<DataTableProps> = ({
   // console.log('endIndex: ', endIndex);
   // // Get the rows to display on the current page
   const pageData = data.slice(startIndex, endIndex);
-  console.log('pageData', pageData);
+  console.log("pageData", pageData);
   const onlyDate = data.slice(0, 10);
   console.log("onlyDate: ", onlyDate);
 
