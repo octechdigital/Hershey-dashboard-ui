@@ -12,6 +12,7 @@
   margin-bottom: 4vh;
   font-family: $Poppins-Medium;
   color: $gray;
+  transition: transform 0.5s linear;
   .icon{
     svg{
       font-size: 30px;
@@ -22,8 +23,6 @@
     width: max-content;
     // background-color: #e22028;
     background: linear-gradient(0deg, #36140B 0%, #744323 97%, #744323 100%), linear-gradient(0deg, #FFD990 0.2%, #FFE6AE 35.1%, #F5F3EA 74%, #F1F1EC 99.92%);
-
-
     // color: #ffffff;
     color: #FFD990;
     border-radius: 5px;
@@ -31,6 +30,10 @@
     .icon {
       color: #ffffff;
     }
+  }
+  &:hover{
+    transform: scale(1.1);
+    border-radius: 5px;
   }
 
 

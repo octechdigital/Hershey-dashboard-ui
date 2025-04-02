@@ -71,12 +71,6 @@ const SideMenu = () => {
           setTimeout(() => {
             navigate("/");
           }, 500);
-
-          //   console.log("Logout inside if")
-          // console.log("success")
-          //   setPendingData(data.data.userList);
-          //   setBaseUrl(data.data.baseUrl);
-          //   setPageCount(data.data.pageCount);
         } else {
           console.log("Logout failed");
         }
