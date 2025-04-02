@@ -82,9 +82,9 @@ const ReasonDialogBox: React.FC<TitleDialogProps> = ({
             Choose here
           </option>
           <option value="Blurred Images">Blurred Images</option>
-          <option value="Incorrect battery quantity">Incorrect Slab</option>
+          <option value="Incorrect Slab">Incorrect Slab</option>
           <option value="No dealer stamp">No dealer stamp</option>
-          <option value="Serial number not matching">Inappropriate Image</option>
+          <option value="Inappropriate Image">Inappropriate Image</option>
           <option value="Other">Other</option>
         </select>
         {error && <p className="error-text">{error}</p>}

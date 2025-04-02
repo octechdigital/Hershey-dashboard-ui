@@ -121,7 +121,7 @@ export function LoginForm() {
                   <div className="error">{errors.password}</div>
                 ) : null}
               </div>
-              <button type="submit" className="login-button">
+              <button type="submit" className="login-button holographic-card">
                 Login
               </button>
             </Form>
