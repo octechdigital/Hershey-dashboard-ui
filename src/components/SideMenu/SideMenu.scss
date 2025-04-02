@@ -40,22 +40,27 @@
     color: #000000;
     display: flex;
     justify-content: center;
-    button{
+    button {
       font-family: $Poppins-Medium;
       font-size: 18px;
       display: flex;
+      align-items: center;  // Ensures proper alignment inside the button
       column-gap: 8px;
-      border:1px solid #565656;
+      border: 1px solid #565656;
       color: #5E5E5E;
       background-color: #ffffff;
-      padding: .5em 1em;
+      padding: 0.5em 1em;
       border-radius: 25px;
       cursor: pointer;
+      transition: background-color 0.5s linear, border 0.5s linear, color 0.5s linear;
+    
       &:hover {
         border: 1px solid transparent;
-        color: #FFFFFF;
+        color: #ffffff;
         background-color: #ff0000;
+        // Removed invalid `transform: background-color;`
       }
     }
+    
   }
 }
